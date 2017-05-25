@@ -1,0 +1,18 @@
+<section class="mm-config-form-panel mm-controll-form flex-col">
+	<h4 (click)="expandSection(0)"><span>General Settings</span></h4>
+	<div *ngIf="activeSection==0" class="mm-settings-section flex-item">
+		<mm-general-config-form [config]="generalConfig" (configChange)="handleGeneralConfigChange($event)"></mm-general-config-form>
+	</div>
+	<h4 (click)="expandSection(1)"><span>Widget List</span></h4>
+	<div *ngIf="activeSection==1" class="mm-settings-section flex-item">
+		<button *ngFor="let w of widgets; let i = index" (click)="addWidgetConfig(w)">Add new {{w.widgetLabel}}</button>
+	</div>
+	<h4 (click)="expandSection(2)"><span>Chart Settings</span></h4>
+	<div *ngIf="activeSection==2" class="mm-settings-section flex-item">
+		<div *ngIf="activeChartId!=-1" mm-widget-form [config]="config.items[activeChartId]?.widgetConfig" (configChange)="handleWidgetConfigChange($event)"></div>
+	</div>
+	<h4 (click)="expandSection(3)"><span>Actions</span></h4>
+	<div *ngIf="activeSection==3" class="mm-settings-section flex-item">
+		<button type="submit">Save</button>
+	</div>
+</section>

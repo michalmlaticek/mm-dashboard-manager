@@ -1,0 +1,59 @@
+.mm-dashboard-manager {
+    position: relative;
+    height: 100%;
+}
+
+.block {
+    display: block;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.flex-col {
+    display: flex;
+    flex-flow: column;
+    max-height: 100%;
+}
+
+.flex-item {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-height: 0px;
+}
+
+.flex-item-2 {
+    flex: 2 1 auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-height: 0px;
+}
+
+.scroll-y {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.mm-dm-full-dashboard {
+    width: 70%;
+}
+
+.mm-dm-controll {
+    width: 30%;
+    border-left: 1px dashed #bf360c;
+}
+
+.height-full {
+    height: 100%;
+}
+
+.mm-chart-setup-panel-col {
+    /*background-color: #424242;*/
+}
+
+.mm-columns-col {
+    border-left: 1px dashed #bf360c;
+    /*background-color: #757575;*/
+}

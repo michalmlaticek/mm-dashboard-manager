@@ -1,0 +1,88 @@
+<div class="mm-chart-form" [formGroup]="form">
+	<p class="mm-form-group">
+		<label>Dashboard Name:</label>
+		<input type="text" formControlName="title">
+	</p>
+	<div formGroupName="gridConfig">
+		<p>
+			<label>Dragable</label>
+			<input type="checkbox" formControlName="draggable">
+		</p>
+		<p>
+			<label>Resizable</label>
+			<input type="checkbox" formControlName="resizable">
+		</p>
+		<p>
+			<label>Max column count</label>
+			<input type="text" formControlName="max_cols">
+		</p>
+		<p>
+			<label>Max row count</label>
+			<input type="text" formControlName="max_rows">
+		</p>
+		<p>
+			<label>Visible column count</label>
+			<input type="text" formControlName="visible_cols">
+		</p>
+		<p>
+			<label>Visible row count</label>
+			<input type="text" formControlName="visible_rows">
+		</p>
+		<p>
+			<label>Min column count</label>
+			<input type="text" formControlName="min_cols">
+		</p>
+		<p>
+			<label>Min row count</label>
+			<input type="text" formControlName="min_rows">
+		</p>
+		<p>
+			<label>Column width</label>
+			<input type="text" formControlName="col_width">
+		</p>
+		<p>
+			<label>Row height</label>
+			<input type="text" formControlName="row_height">
+		</p>
+		<p>
+			<label>Cascade</label>
+			<input type="text" formControlName="cascade">
+		</p>
+		<p>
+			<label>Min width</label>
+			<input type="text" formControlName="min_width">
+		</p>
+		<p>
+			<label>Min height</label>
+			<input type="text" formControlName="min_height">
+		</p>
+		<p>
+			<label>Fix to grid</label>
+			<input type="checkbox" formControlName="fix_to_grid">
+		</p>
+		<p>
+			<label>Auto Style</label>
+			<input type="checkbox" formControlName="auto_style">
+		</p>
+		<p>
+			<label>Auto resize</label>
+			<input type="checkbox" formControlName="auto_resize">
+		</p>
+		<p>
+			<label>Maintain Ratio</label>
+			<input type="checkbox" formControlName="maintain_ratio">
+		</p>
+		<p>
+			<label>Prefer new</label>
+			<input type="checkbox" formControlName="prefer_new">
+		</p>
+		<p>
+			<label>Zoom on drag</label>
+			<input type="checkbox" formControlName="zoom_on_drag">
+		</p>
+		<p>
+			<label>Limit to screen</label>
+			<input type="checkbox" formControlName="limit_to_screen">
+		</p>
+	</div>
+</div>

@@ -1,0 +1,17 @@
+.mm-columns ul {
+    padding: 0px;
+}
+
+.mm-column {
+    background-color: #EFEFEF;
+    list-style-type: none;
+    margin-bottom: 5px;
+    width: 100%;
+    border-radius: 4px;
+    cursor: move;
+}
+
+.mm-column span {
+    padding-left: 10px;
+    padding-right: 10px;
+}

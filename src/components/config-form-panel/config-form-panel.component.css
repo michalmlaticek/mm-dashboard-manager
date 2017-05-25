@@ -1,0 +1,20 @@
+.mm-chart-config-area {
+    height: 70%;
+    overflow-y: auto;
+}
+
+label, input, select {
+    display: block;
+    width: 100%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.display-none {
+    display: none;
+}
+
+h4 {
+    cursor: pointer;
+}

@@ -1,0 +1,9 @@
+<div class="mm-dashboard-manager flex-row height-full">
+	<div class="mm-dm-full-dashboard scroll-y">
+		<mm-dashboard [dashboard]="dashboard" [(data)]="data"></mm-dashboard>
+	</div>
+	<div class="mm-dm-controll height-full">
+		<mm-controll-panel class="flex-row height-full" [dashboard]="dashboard" [columns]="columns" 
+		[activeChartId]="activeChartId" (dashboardChange)="handleDashboardChange($event)"></mm-controll-panel>
+	</div>
+</div>

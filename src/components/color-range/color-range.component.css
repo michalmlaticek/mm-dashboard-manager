@@ -1,0 +1,11 @@
+.mm-color-cube-container {
+    display: flex;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+
+.mm-color-cube {
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+}

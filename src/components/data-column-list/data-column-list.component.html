@@ -1,0 +1,8 @@
+<section class="mm-columns">
+  <h4><span>Available Columns</span></h4>
+  <ul class="scroll-y">
+    <li class="mm-column" *ngFor="let col of columns;let i = index" dnd-draggable [dragEnabled]="true" [dragData]="col">
+      <span>{{col.label}}</span>
+    </li>
+  </ul>
+</section>
